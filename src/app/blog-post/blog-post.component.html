@@ -1,0 +1,18 @@
+<main *ngIf="blogPost$ | async as blogPosts ">
+ <div class="Post-container">
+
+    <img [src]="blogPosts.fields.featuredImage.fields.file.url" alt="">
+    <h2 class="title">{{blogPosts.fields.title}}</h2>
+    <p id="authorName">{{blogPosts.fields.authorName}}</p>
+    <p class="summary">{{blogPosts.fields.summary}}</p>
+   
+    <p class="content"><markdown ngPreserveWhitespaces>
+        {{blogPosts.fields.body}}
+
+          </markdown></p>
+    
+</div>
+
+
+</main>
+    <p>blog-post works!</p>

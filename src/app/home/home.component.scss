@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #353535;
+    color: #181818;
     }
     header {
         background-color: lighten($color: #e6e6e6, $amount: 1);
@@ -93,11 +93,4 @@
     }
 
 
-    .Post-container {
-        max-width: 600px;
-        margin: 0 auto;
-        margin-bottom: 150px;
-        padding: 20px;
-        background-color: #f1f1f1;
-   
-    }
+  
