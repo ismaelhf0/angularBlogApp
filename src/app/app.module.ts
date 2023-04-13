@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import {MarkdownModule} from 'ngx-markdown';
+import { NgxContentfulRichTextModule } from 'ngx-contentful-rich-text';
+
 
 @NgModule({
   declarations: [
@@ -16,8 +18,9 @@ import {MarkdownModule} from 'ngx-markdown';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxContentfulRichTextModule,
     MarkdownModule.forRoot()
-
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,13 +3,18 @@
 
     <img [src]="blogPosts.fields.featuredImage.fields.file.url" alt="">
     <h2 class="title">{{blogPosts.fields.title}}</h2>
-    <p id="authorName">{{blogPosts.fields.authorName}}</p>
-    <p class="summary">{{blogPosts.fields.summary}}</p>
-   
+    <p id="authorName">Author name:  {{blogPosts.fields.authorName}}</p>
+    <p class="content"><markdown ngPreserveWhitespaces>{{blogPosts.fields.summary1.content[0].content[0].value}}</markdown></p>
     <p class="content"><markdown ngPreserveWhitespaces>
-        {{blogPosts.fields.body}}
 
-          </markdown></p>
+          {{blogPosts.fields.body}}
+        </markdown></p>
+        <img [src]="blogPosts.fields.bodyImg.fields.file.url" alt="">
+        <p class="content"><markdown ngPreserveWhitespaces>
+
+          {{blogPosts.fields.bodyTwoo}}
+        </markdown></p>
+
     
 </div>
 

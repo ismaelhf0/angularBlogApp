@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ContentfulService } from '../services/contentful.service';
 import { Observable } from 'rxjs';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { Document } from '@contentful/rich-text-types/dist/types/types';
+
+
+
 
 @Component({
   selector: 'app-blog-post',
